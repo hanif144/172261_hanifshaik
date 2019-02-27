@@ -11,14 +11,20 @@
 
 
 
-<form id='register-form'></form>
-  <input type="text" placeholder="Username" required>
-  <input type="email" placeholder="Email" required>
-  <input type="password" placeholder="Password" required>
-  <input type="password" placeholder="Re Password" required>
-  <button type='submit'>Register</button>
-  <label for='form-switch'>Already Member ? Sign In Now..</label>
-</form>
+
+<form action='RegisterationSer',method="post">
+  <input type="text" placeholder="Username" name="user" required>
+  <input type="email" placeholder="Email" name="email" required>
+  <input type="password" placeholder="Password" name="password" required>
+  <input type="password" placeholder="Re Password"name="repassword" required>
+  <input type='submit'>
+  
+  
+  
+  
+  
+  
+  </form>
 
 </body>
 </html>

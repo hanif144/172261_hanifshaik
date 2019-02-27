@@ -9,12 +9,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div class="login">
-    <input type="text" placeholder="Username" id="username">  
-  <input type="password" placeholder="password" id="password">  
+<form action ="Login" method="post">
+
+
+    <input type="text" placeholder="Username" name="username">  
+  <input type="password" placeholder="password" name="password">  
   <a href="#" class="forgot">forgot password?</a>
-  <input type="submit" value="Sign In">
-</div>
+ <a href=Check.jsp><input type="submit" value="Sign In"></a>
+</form>
 <div class="shadow"></div>
 </body>
 </html>
