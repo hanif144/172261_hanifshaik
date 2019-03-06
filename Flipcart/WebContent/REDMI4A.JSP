@@ -25,10 +25,12 @@ th, td {
 
 
 <tr>
+<td> PRICE           : Rs.11000/-
+</tr>
 <td> Model Number    : SM-A920FZKDINS</td>
  </tr>
  <tr>
- <td> Model Name      : Galaxy A9</td>
+ <td> Model Name      : REDMI 4A</td>
  </tr>
  <tr>
  <td>Color           : Caviar Black</td>
@@ -54,6 +56,7 @@ th, td {
 </table>
  <div align="center">     
 <a href="phones.jsp"><button type="button" class="btn btn-danger" >BUY NOW</button>
+<button type="button" class="btn btn-danger" >ADD TO CART</button>
 </div>
 
 
