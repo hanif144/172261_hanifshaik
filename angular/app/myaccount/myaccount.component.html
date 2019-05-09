@@ -1,0 +1,48 @@
+  <h3>BookWash Details</h3>
+    <div *ngFor = "let res of bookwashresult" >
+      <div *ngIf="res.email==read()">
+        <label>Email: </label>{{res.email}} <br>
+        <label>Date: </label>{{res.date}}
+        <label><b>Location: </b></label>{{res.location}}
+      </div>
+    </div>
+
+  <br><br>
+
+  <h3>Vehicle Details</h3>
+  <div *ngFor = "let res of vehicleresult" >
+    <div *ngIf="res.email==read()">
+      <label><b>Vehicle Number: </b></label>{{res.vehiclenumber}}
+    </div>
+  </div>
+  
+  <br><br>
+
+  <!-- <h3>Membership Details</h3>
+  <div *ngFor = "let res of membershipresult" >
+    <div *ngIf="res.email==read()">
+      <label><b>Location: </b></label>{{res.location}}
+    </div>
+  </div>
+  
+  <br><br> -->
+  
+  <h3>Addtitional Details</h3>
+  <div *ngFor = "let res of addpurchaseresult" >
+    <div *ngIf="res.email==read()">
+      <label><b>Vechile is:</b></label>{{res.typeOfVechile}}
+      <label>Part of Day: </label>{{res.partOfDay}}
+    </div>
+  </div>
+  
+  <br><br>
+
+  <h3>Payment Details</h3>
+  <div *ngFor = "let res of paymentresult" >
+    <div *ngIf="res.email==read()">
+      <label><b>Name on Card:</b></label>{{res.nameoncard}}
+      <label>Paid Card Number:</label>{{res.creditcardnumber}}
+    </div>
+  </div>
+  
+  <br><br>

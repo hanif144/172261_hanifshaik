@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head> 
+
+  <body>
+    <section id="topbar" class="d-none d-lg-block">
+      <div class="container clearfix">
+        <div class="contact-info float-left">
+          <i class="fa fa-envelope-o"></i> <a href="www.dhulaii.com">name@dhulaii.com</a>
+          <i class="fa fa-phone"></i> +91 99885 77665
+        </div>
+        <div class="social-links float-right">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+    <div class="header">
+      <div class="container">
+          <div id="logo" class="pull-left">
+            <img src="https://www.dhulaii.com/assets/img/freeze/logo.png" width="215" height="50"/>
+          </div>
+          <div style="text-align: right">
+            <i><h1 >DHULAII - The {{ title }}</h1></i>
+          </div>
+
+          <carousel>
+            <slide>
+              <img src=" http://www.haroldsextremeautodetailing.com/images/banner.png" alt="first slide" style="display: block;height: 20%;width: 100%;">
+            </slide>
+            <slide>
+              <img src="http://rgbelievemotherxrx.info/wp-content/uploads/2018/08/how-to-use-waterless-car-wash-car-wash-waterless-car-wash-products-autozone-waterless-car-wash-business-philippines.jpg" alt="second slide" style="display: block; height:10%; width: 100%">
+            </slide>
+            <slide>
+              <img src="https://qsd-inc.com/wp-content/uploads/2018/03/wash-bay-curtains.jpg" alt="third slide" style="display: block;height:20%;width: 100%;">
+            </slide>
+          </carousel>
+
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                
+              <div class="navbar-header-left">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                  <a class="navbar-brand" href="#">Home</a>
+                  <a [routerLink]="['/contact']">Contact</a>
+                  <a [routerLink]="['/about']">About Us</a>
+                  <a *ngIf="readValue('Role')=='nothing'" [routerLink]="['/supervisorlogin']"><span class="glyphicon glyphicon-log-in"></span>Supervisor Login</a>
+                  <a *ngIf="readValue('Role')=='nothing'" [routerLink]="['/login']"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                  <a *ngIf="readValue('Role')!='nothing'" [routerLink]="['/myaccount']"> My Account</a>
+                  <a *ngIf="readValue('Role')!='nothing'" href="#Home" (click)="logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a>
+                  <a *ngIf="readValue('Role')=='nothing'" [routerLink]="['/register']"><span class="glyphicon glyphicon-log-in"></span> Register</a><br>
+                  <a *ngIf="readValue('Role')!='nothing'" class="nav-link" style="margin:5px;" role="button"><h3><b class="text-info"> Welcome </b><b class="text-white">{{readValue('Email')}}</b></h3></a>
+              </div>
+            </div>
+          </nav>
+      </div> 
+    </div>   
+  </body>
+
+<router-outlet>
+
+</router-outlet>
+
+<footer id="footer">
+  <div class="container">
+    <div class="copyright">
+      © Copyright
+      CarWash.All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+
+</html>

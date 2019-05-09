@@ -1,0 +1,146 @@
+body {
+  background: #fff;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #27369f;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #51d8af;
+  outline: none;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+#topbar {
+  background: linear-gradient(45deg, #27369f 32%, #2158f3 100%);
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #ffffff;
+}
+
+#topbar .contact-info a:hover {
+  color: #E91E63;
+}
+
+#topbar .contact-info i {
+  color: #ffffff;
+  padding: 4px;
+}
+
+.contact-info.float-left {
+    color: #ffffff;
+}
+
+#topbar .contact-info .fa-phone {
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 1px solid #e9e9e947;
+}
+
+#topbar .social-links a {
+  color: #ffffff;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+  border-left: 1px solid #e9e9e924;
+}
+
+#topbar .social-links a:hover {
+  color: #ffffff;
+}
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+}
+
+.header {
+    overflow: hidden;
+    background-color:lightblue;
+    padding: 20px 10px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: rgb(180, 25, 25);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: yellow;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: yellow;
+    color: yellow;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  #footer {
+    background: #081e5b;
+    padding: 0 0 30px 0;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    color: #ffffffad;
+  }
+  
+  #footer .credits {
+    text-align: center;
+    font-size: 13px;
+    color: #ffffff85;
+    margin-top: 8px;
+  }
+  
+  #footer .credits a {
+    color: #FF9800;
+  }
+  .owl-carousel .owl-item img {
+      display: block;
+      width: auto;
+      height: 70px;
+      margin: 0 auto;
+  }

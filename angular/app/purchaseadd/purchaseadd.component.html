@@ -1,0 +1,41 @@
+<div class="backgroundcolor">
+  <div class="form-group row">
+    <div class="col-sm-3">
+      <form [hidden]="!submitted" [formGroup]="additionalPurchaseForm" novalidate (ngSubmit)="onAdd()" >
+        
+        <div class="form-group">
+          <label for="typeOfVechile">Type of Vechile</label>
+            <select class="form-control" id="typeOfVechile" formControlName="typeOfVechile" [(ngModel)]="addpurchase.typeOfVechile" >
+              <option></option>
+              <option>Car</option>
+              <option>Bike</option>
+            </select> 
+        </div>
+
+        <div class="form-group">
+          <label for="partOfDay">Part of Day</label>
+            <select class="form-control" id="partOfDay" formControlName="partOfDay" [(ngModel)]="addpurchase.partOfDay" >
+              <option></option>
+              <option>Morning</option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+            </select>  
+        </div>
+
+        <div class="form-group">
+          <label for="dirtyVechile">How much Dirty the Vechile is</label>
+            <select class="form-control" id="dirtyVechile" formControlName="dirtyVechile" [(ngModel)]="addpurchase.dirtyVechile" >
+              <option></option>  
+              <option>Low</option>
+              <option>Medium</option>
+              <option>Extreme</option>
+            </select>
+        </div>
+
+        <button class="btn btn-primary" [disabled]="!additionalPurchaseForm.valid" type="submit">Submit</button>
+          
+      </form>
+    </div>
+    <div class="col-sm-7"></div>
+  </div>
+</div>
