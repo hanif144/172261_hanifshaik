@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: LoginService
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: haneshai
+Implementation-Vendor-Id: io.login.service
+Build-Jdk: 1.8.0_141
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/LoginService
+Created-By: Maven Integration for Eclipse
+
