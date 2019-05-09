@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Addwasherman
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: haneshai
+Implementation-Vendor-Id: com.addwasherman
+Build-Jdk: 1.8.0_141
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/Addwasherman
+Created-By: Maven Integration for Eclipse
+
